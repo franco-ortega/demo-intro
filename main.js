@@ -33,3 +33,21 @@ const buttonA3 = buttonsArray.find((button) => button.id === 'button-a');
 console.log('button A1:', buttonA1);
 console.log('button A2:', buttonA2);
 console.log('button A3:', buttonA3);
+
+// TWO OPTIONS FOR ADDING EVENT LISTENER TO BUTTONS
+// Event listeners take in two arguements: an event and a function
+
+// 1. Include all the event listener code inside the event listener
+buttonA1.addEventListener('click', () => {
+  console.log('clicked A!');
+});
+
+// 1. Create the event listener code outside the event listener
+const eventB = 'click';
+const functionB = () => {
+  console.log('clicked B!');
+};
+
+const buttonB = buttons[1];
+
+buttonB.addEventListener(eventB, functionB);
