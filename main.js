@@ -51,3 +51,14 @@ const functionB = () => {
 const buttonB = buttons[1];
 
 buttonB.addEventListener(eventB, functionB);
+
+// Making a new array that includes the NodeList and other data
+const buttonArrayCopy = [...buttons, 'pizza', 23];
+
+// Get the second item in the array with the "at" method
+const secondItem = buttonArrayCopy.at(1);
+console.log('second item:', secondItem);
+
+// Get the last item in the array with the "at" method
+const lastItem = buttonArrayCopy.at(-1);
+console.log('last item:', lastItem);
