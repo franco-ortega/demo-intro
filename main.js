@@ -62,3 +62,18 @@ console.log('second item:', secondItem);
 // Get the last item in the array with the "at" method
 const lastItem = buttonArrayCopy.at(-1);
 console.log('last item:', lastItem);
+
+// ASYNC AWAIT
+async function waiting() {
+  console.log('...waiting...');
+
+  setTimeout(() => {
+    console.log('...doing API stuff...');
+    console.log('done!');
+    console.log('the end');
+  }, 2000);
+}
+
+await waiting();
+
+console.log('other stuff');
